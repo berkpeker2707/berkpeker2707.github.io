@@ -11,6 +11,7 @@
     border-radius: 8px;
 }
 
+/* header css starts */
 .header-container{
     display: flex;
     flex-direction:row;
@@ -120,8 +121,59 @@
     border-radius: 40px;
     border: 1px #1e2d3d solid;
 }
+/* header css ends */
+
+/* footer css starts */
+.footer-container {
+    background: #011627;
+    color: #607b96;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 90vw;
+    
+  }
+
+  .footer-container-inner-left {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .find-me {
+    font-size: 14px;
+    font-family: Fira Code;
+    font-weight: 450;
+    word-wrap: break-word;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-container-inner-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .footer-container-inner-right-link{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #607b96;
+    text-decoration: none;
+  }
+/* footer css ends */
 
 @media only screen and (max-width: 899px) {
+    /* header css starts */
     .header-container {
         display: flex;
         flex-direction:column;
@@ -144,12 +196,11 @@
        width: 90vw;
        color:#ffffff
     }
-    
     .header-item-left, .header-item-right{
-         justify-content: center;
-         align-items: center;
-         padding-left: 0;
-         padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
         margin-left:auto!important;
         margin-right:auto!important;
         transition: 0.3s;
@@ -173,6 +224,12 @@
     .header-item-underline{
         display: none;
     }
-    
+    /* header css ends */
+
+    /* footer css starts */
+    .footer-container{
+        display: none;
+    }
+    /* footer css ends */
   }
   
