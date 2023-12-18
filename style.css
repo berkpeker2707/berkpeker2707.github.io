@@ -139,8 +139,10 @@
          padding-right: 0;
         margin-left:auto!important;
         margin-right:auto!important;
+        transition: 0.3s;
+        border-bottom: 1px #1e2d3d solid;
+        width: 90vw;
     }
-
     .header-item-left:hover, .header-item-right:hover{
         justify-content: center;
         align-items: center;
@@ -148,6 +150,14 @@
         padding-right: 0;
        margin-left:auto!important;
        margin-right:auto!important;
+       border-bottom: 2px #fea55f solid;
+        width: 90vw;
+    }
+    .header-item-bar{
+        display: none;
+    }
+    .header-item-underline{
+        display: none;
     }
     
   }
