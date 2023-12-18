@@ -132,7 +132,20 @@
         justify-content: flex-start;
         align-items: center;
     }
-    .header-item-left-nointeraction, .header-item-left, .header-item-right{
+    .header-item-left-nointeraction{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+       margin-left:auto!important;
+       margin-right:auto!important;
+       transition: 0.3s;
+       border-bottom: 1px #1e2d3d solid;
+       width: 90vw;
+       color:#ffffff
+    }
+    
+    .header-item-left, .header-item-right{
          justify-content: center;
          align-items: center;
          padding-left: 0;
@@ -142,6 +155,7 @@
         transition: 0.3s;
         border-bottom: 1px #1e2d3d solid;
         width: 90vw;
+        color:#607b96
     }
     .header-item-left:hover, .header-item-right:hover{
         justify-content: center;
