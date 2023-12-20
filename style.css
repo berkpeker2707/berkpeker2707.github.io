@@ -168,6 +168,13 @@
 }
 /* center css section ends */
 
+
+ /* about center section starts */
+ .about-center-section{
+    display: flex
+ }
+ /* about center section ends */
+
  /* folder section starts */
 .folder-section-container{
     background: #011627;
@@ -175,7 +182,6 @@
     width:18vw;
     border-right: 1px #1e2d3d solid;
 }
-
 .folder-section-container-inner{
     color: #607b96;
     background: #011627;
@@ -212,6 +218,23 @@
 }
 .folder-section-container-inner-second-image{
     margin-right: 1vw; margin-left: 1vw;
+}
+.folder-section-container-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 72vw;
+    height: 80vh;
+    color: #607b96;
+    background: #011627;
+    align-items: center;
+    transition: 0.3s;
+    border-bottom: 1px #1e2d3d solid;
+    /* border-right: 1px #1e2d3d solid; */
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap: var(--break-word);
 }
  /* folder section ends  */
 
