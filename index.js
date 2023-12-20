@@ -21,6 +21,7 @@ function closeMenu() {
 
 // about page scripts start
 var bioSection = document.getElementsByClassName("bio-section")[0];
+var skillsSection = document.getElementsByClassName("skills-section")[0];
 var interestSection = document.getElementsByClassName("interest-section")[0];
 var educationSection = document.getElementsByClassName("education-section")[0];
 
@@ -29,6 +30,10 @@ function showSection(section) {
 
   if (section !== bioSection) {
     bioSection.style.display = "none";
+  }
+
+  if (section !== skillsSection) {
+    skillsSection.style.display = "none";
   }
 
   if (section !== interestSection) {
