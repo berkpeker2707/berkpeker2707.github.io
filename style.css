@@ -1,19 +1,35 @@
+*{
+    transition: 0.3s;
+}
 :root {
-    font-family: Fira Code;
-    font-weight: 450;
-    word-wrap: break-word;
-    --selected-underline-bar-left-value: 150px;
+    --font-size:  16px;
+    --font-family: Fira Code;
+    --font-weight: 450;
+    --word-wrap: break-word;
+
+    --inner-background: #011627;
+  }
+  body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #010c15;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
   }
 .body-inner{
     position: absolute;
     width: 90vw;
     height: 90vh;
-    background: #011627;
+    background: var(--inner-background);
     border: 1px #1e2d3d solid;
     border-radius: 8px;
     background-image: url('/assets/background-blur.svg');
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 /* header css starts */
 .header-container{
@@ -21,37 +37,39 @@
     flex-direction:row;
     position: relative;
     width: 90vw;
-    height: 55px;
-    background: #011627;
+    height: 6vh;
+    background: var(--inner-background);
    
 }
 .header-item-left-nointeraction{
     color: #607b96;
-    width: 130px;
-    height: 55px;
-    padding-left: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 31px;
-}
-.header-item-left{
-    color: #607b96;
-    width: 130px;
-    height: 55px;
-    padding-left: 20px;
+    width: 20vw;
+    height: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 31px;
     transition: 0.3s;
+    border-bottom: 1px #1e2d3d solid;
+    border-right: 1px #1e2d3d solid;
+}
+.header-item-left{
+    color: #607b96;
+    width: 20vw;
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 31px; */
+    transition: 0.3s;
+    border-bottom: 1px #1e2d3d solid;
+    border-right: 1px #1e2d3d solid;
 }
 .header-item-left:hover{
     border-bottom: 2px solid #fea55f ;
     color: #ffffff;
-    width: 130px;
-    height: 55px;
-    padding-left: 20px;
+    width: 20vw;
+    height: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -59,22 +77,22 @@
 }
 .header-item-right{
     color: #607b96;
-    width: 130px;
-    height: 55px;
-    padding-right: 20px;
+    width: 20vw;
+    height: inherit;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
     gap: 31px;
     transition: 0.3s;
+    border-bottom: 1px #1e2d3d solid;
+    border-left: 1px #1e2d3d solid;
 }
 .header-item-right:hover{
     border-bottom: 2px solid #fea55f ;
     color: #ffffff;
-    width: 130px;
-    height: 55px;
-    padding-right: 20px;
+    width: 20vw;
+    height: inherit;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -83,10 +101,19 @@
 }
 .header-item-inner{
     position: relative;
-    font-size: 16px;
-    font-family: Fira Code;
-    font-weight: 450;
-    word-wrap: break-word;
+    padding-left: 2vw;
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap:  var(--break-word);
+}
+.header-item-inner-right{
+    position: relative;
+    padding-right: 2vw;
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap:  var(--break-word);
 }
 .header-item-inner-link{
     -webkit-user-select: none;
@@ -94,8 +121,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #607b96;
     text-decoration: none;
+    color: #607b96;
 }
 .header-item-inner-link:hover{
     -webkit-user-select: none;
@@ -105,26 +132,6 @@
     user-select: none;
     color: #ffffff;
     text-decoration: none;
-}
-.header-item-bar{
-    width: 55px;
-    height: 0px;
-    top: 0;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: 0 0;
-    border: 1px #1e2d3d solid;
-}
-.header-item-underline{
-    width: 0px;
-    height: 90vw;
-    left: 0px;
-    top: 60px;
-    position: absolute;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    border-radius: 40px;
-    border: 1px #1e2d3d solid;
 }
 
 .header-container-responsive{
@@ -161,9 +168,58 @@
 }
 /* center css section ends */
 
+ /* folder section starts */
+.folder-section-container{
+    background: #011627;
+    height:80vh;
+    width:18vw;
+    border-right: 1px #1e2d3d solid;
+}
+
+.folder-section-container-inner{
+    color: #607b96;
+    background: #011627;
+    width: inherit;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s;
+    border-bottom: 1px #1e2d3d solid;
+    /* border-right: 1px #1e2d3d solid; */
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap:  var(--break-word);
+}
+.folder-section-container-inner-second{
+    color: #607b96;
+    background: #011627;
+    width: inherit;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s;
+    /* border-right: 1px #1e2d3d solid; */
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap:  var(--break-word);
+}
+.folder-section-container-inner-image{
+    margin-right: 1vw; padding-left: 2vw
+}
+.folder-section-container-inner-second-image{
+    margin-right: 1vw; margin-left: 1vw;
+}
+ /* folder section ends  */
+
+
+
 /* footer css starts */
 .footer-container {
-    background: #011627;
+    background: var(--inner-background);
     color: #607b96;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -181,10 +237,10 @@
     padding-left: 20px;
   }
   .find-me {
-    font-size: 14px;
-    font-family: Fira Code;
-    font-weight: 450;
-    word-wrap: break-word;
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+    font-weight: var(--font-weight);
+    word-wrap:  var(--break-word);
     margin-right: auto;
     display: flex;
     justify-content: flex-start;
@@ -298,12 +354,7 @@
        border-bottom: 2px #fea55f solid;
         width: 90vw;
     }
-    .header-item-bar{
-        display: none;
-    }
-    .header-item-underline{
-        display: none;
-    }
+
     /* header css ends */
 
  
