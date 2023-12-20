@@ -18,3 +18,23 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+var bioSection = document.getElementsByClassName("bio-section")[0];
+var interestSection = document.getElementsByClassName("interest-section")[0];
+var educationSection = document.getElementsByClassName("education-section")[0];
+
+function showSection(section) {
+  section.style.display = "flex";
+
+  if (section !== bioSection) {
+    bioSection.style.display = "none";
+  }
+
+  if (section !== interestSection) {
+    interestSection.style.display = "none";
+  }
+
+  if (section !== educationSection) {
+    educationSection.style.display = "none";
+  }
+}
