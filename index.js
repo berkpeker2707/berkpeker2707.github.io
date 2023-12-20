@@ -19,6 +19,7 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+// about page scripts start
 var bioSection = document.getElementsByClassName("bio-section")[0];
 var interestSection = document.getElementsByClassName("interest-section")[0];
 var educationSection = document.getElementsByClassName("education-section")[0];
@@ -38,3 +39,4 @@ function showSection(section) {
     educationSection.style.display = "none";
   }
 }
+// about page scripts ends

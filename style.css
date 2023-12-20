@@ -175,6 +175,8 @@ body{
 
  /* folder section starts */
 .folder-section-container{
+    display: flex;
+    flex-direction: column;
     background: #011627;
     height:80vh;
     width:18vw;
@@ -190,7 +192,7 @@ body{
     align-items: center;
     transition: 0.3s;
     border-bottom: 1px #1e2d3d solid;
-    /* border-right: 1px #1e2d3d solid; */
+    border-right: 1px #1e2d3d solid;
     font-size: var(--font-size);
     font-family:var(--font-family);
     font-weight: var(--font-weight);
