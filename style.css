@@ -16,7 +16,18 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
+
+    /* animation-name: bodya;
+    animation-duration: 1s; */
+    
+
   }
+
+  /* @keyframes bodya {
+    from {height: 0vh;}
+    to {height:100vh;}
+  } */
+
 .body-inner{
     position: absolute;
     width: 90vw;
