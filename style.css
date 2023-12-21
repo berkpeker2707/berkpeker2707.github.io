@@ -219,27 +219,31 @@ body {
 }
 
 .center-container-inner{
-    display: inline; margin-right: auto; width: inherit
+    display: inline;
+    margin-right: auto;
+    width: inherit
 }
 
 .center-container-paragraph.helloP{
-    font-size: 36px
+    font-size: 2vw
 }
 
 .center-container-paragraph.softwareP{
-    font-size: 42px
+    font-size: 3vw
 }
 
 .center-container-paragraph.berkP{
-    font-size: 62px
+    font-size: 3vw
 }
 
 .center-container-paragraph {
-	word-wrap: break-word;
+	word-wrap: normal;
 	width: inherit;
 	margin: auto;
 	text-align: left;
-    font-size: 16px; display: inline
+    font-size: 16px; 
+    display: block;
+    overflow: hidden;
 }
 
 /* center css section ends */
@@ -371,7 +375,7 @@ padding-left:5px;
 .project-card {
     top: 20vh;
 	width: 30vw;
-	height: 70vh;
+	height: inherit;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -397,6 +401,7 @@ padding-left:5px;
 	line-height: 27px;
 	word-wrap: break-word;
 	color: #607b96;
+
 }
 
 .project-card-left-bottom-button {
@@ -421,8 +426,8 @@ padding-left:5px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
-    width: 30vw;
-    height: 30vh ;
+    width: 40vw;
+    height: 40vh ;
 	top: 10vh;
 	justify-content: center;
 	align-items: center;
@@ -449,7 +454,7 @@ padding-left:5px;
 .contact-header-paragraph {
     display: inline;
     color: #4d5bce;
-	font-size: 32px;
+	font-size: 6vh;
 
 	word-wrap: normal;
 	width: inherit;
@@ -460,7 +465,7 @@ padding-left:5px;
 .contact-comment-paragraph {
     display: inline;
 	color: #607b96;
-	font-size: 16px;
+	font-size: 2vh;
 
 	word-wrap: break-word;
 	width: inherit;
@@ -473,7 +478,7 @@ padding-left:5px;
 .contact-nonselectable-const-paragraph {
 	display: inline;
 	color: #4d5bce;
-	font-size: 16px;
+	font-size: 2vh;
 
 	word-wrap: break-word;
 	width: inherit;
@@ -484,7 +489,7 @@ padding-left:5px;
 .contact-nonselectable-name-paragraph {
 	display: inline;
 	color: #43d9ad;
-	font-size: 16px;
+	font-size: 2vh;
 
 	word-wrap: break-word;
 	width: inherit;
@@ -495,7 +500,7 @@ padding-left:5px;
 .contact-nonselectable-equal-paragraph {
 	display: inline;
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 2vh;
 
 	word-wrap: break-word;
 	width: inherit;
@@ -506,7 +511,7 @@ padding-left:5px;
 .selectable-contact-paragraph {
 	display: inline;
 	color: #e99287;
-	font-size: 16px;
+	font-size: 2vh;
 
 	word-wrap: break-word;
 	width: inherit;
@@ -601,20 +606,22 @@ padding-left:5px;
      
     }
     
-    .center-container-inner{
-        display: inline; margin-right: auto; width: inherit
-    }
+     .center-container-inner{
+        display: inline;
+        margin-right: auto;
+        width: inherit
+    } 
     
     .center-container-paragraph.helloP{
-        font-size: 18px!important
+        font-size: 2vh
     }
     
     .center-container-paragraph.softwareP{
-        font-size: 22px!important
+        font-size: 3vh
     }
     
     .center-container-paragraph.berkP{
-        font-size: 32px!important
+        font-size: 3vh
     }
     
     .center-container-paragraph {
@@ -637,8 +644,8 @@ padding-left:5px;
 @media only screen and (max-width: 899px) {
 .project-card{
     top: 20vh;
-    width: 70vw;
-    height: 50vh
+	width: 80vw;
+	height: inherit;
 }
     .center-container{
         width: 50vw;
